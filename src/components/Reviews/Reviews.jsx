@@ -12,8 +12,6 @@ const Reviews = () => {
     getMovieReviews(movieId).then(review => setReviews(review));
   }, [movieId]);
 
-  console.log(reviews);
-
   return (
     <ReviewsList>
       {reviews.length > 0 ? (

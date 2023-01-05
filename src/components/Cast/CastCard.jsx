@@ -1,5 +1,4 @@
 import { CastItem } from './CastCard.styled';
-import PropTypes from 'prop-types';
 
 export const CastCard = ({ id, name, character, photo }) => {
   let imageUrl = `https://image.tmdb.org/t/p/w200/${photo}`;
@@ -14,11 +13,4 @@ export const CastCard = ({ id, name, character, photo }) => {
       <p>{character}</p>
     </CastItem>
   );
-};
-
-CastCard.propTypes = {
-  id: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  character: PropTypes.string.isRequired,
-  photo: PropTypes.string.isRequired,
 };
